@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.PaginaNavegacao.Pagina02"
+             NavigationPage.HasBackButton="False"
+             Title="Página 02">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#1a1919">
+            <Label Text="Essa é a Página 02 de Navegação"
+                TextColor="White"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Página Inicial"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    Clicked="PaginaInicial"/>
+            <StackLayout Orientation="Horizontal"
+                         VerticalOptions="EndAndExpand"
+                         HorizontalOptions="Center">
+                <Button Text="Página Anterior"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    VerticalOptions="EndAndExpand"
+                    Clicked="PaginaAnterior"/>
+                <Button Text="Próxima Página"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    VerticalOptions="EndAndExpand"
+                    Clicked="ProximaPagina"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

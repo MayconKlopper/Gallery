@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Local="clr-namespace:Gallery"
+             x:Class="Gallery.AppBase.ManuLateral">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu" BackgroundColor="#1a1919">
+            <StackLayout>
+                <Label TextColor="White" Text="Páginas" FontSize="Title" Padding="30,10,30,10"/>
+                <Button BackgroundColor="Transparent" TextColor="White" Text="Página Inicial" Clicked="AbrirPaginaInicial" />
+                <Button BackgroundColor="Transparent" TextColor="White" Text="Content page" Clicked="AbrirContPage" />
+                <Button BackgroundColor="Transparent" TextColor="White" Text="Navigation Page" Clicked="AbrirNavigationPage" />
+                <Button BackgroundColor="Transparent" TextColor="White" Text="Carrousel Page" Clicked="AbrirCarrouselPage" />
+                <Button BackgroundColor="Transparent" TextColor="White" Text="Tabbed page" Clicked="AbrirTabbedPage" />
+                <Button BackgroundColor="Transparent" TextColor="White" Text="Modal Page" Clicked="AbrirModalpage" />
+                <Button BackgroundColor="Transparent" TextColor="White" Text="Fechar" VerticalOptions="EndAndExpand" Clicked="Fechar" />
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <Local:MainPage />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
